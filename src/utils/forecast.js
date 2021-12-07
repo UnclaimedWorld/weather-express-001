@@ -9,7 +9,7 @@ const forecast = (lat, lng, callback) => {
       callback('something went wrong');
     } else {
       callback(undefined, {
-        forecast: 'It is ' + current.temperature + ' degree outside',
+        forecast: `It is ${current.temperature} degree outside. Humidity is ${current.humidity}, wind speed is ${15} mps.`,
         location: location.name
       });
     }
